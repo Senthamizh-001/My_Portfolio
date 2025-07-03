@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Palette, Zap, Heart, Award, Calendar, MapPin, Mail, Phone } from 'lucide-react';
+import { Code, Palette, Zap, Heart, Award, Calendar, MapPin, Mail, Phone, GraduationCap, BookOpen } from 'lucide-react';
 
 const About: React.FC = () => {
   const skills = [
@@ -14,9 +14,9 @@ const About: React.FC = () => {
   ];
 
   const stats = [
-    { icon: Award, value: '25+', label: 'Projects Completed' },
-    { icon: Heart, value: '50+', label: 'Happy Clients' },
-    { icon: Calendar, value: '3+', label: 'Years Experience' },
+    { icon: Award, value: '10', label: 'Mini Projects Completed' },
+    { icon: Heart, value: '2', label: 'Main Projects Undergoing' },
+    { icon: GraduationCap, value: 'B.E.', label: 'College Studying Engineering' },
     { icon: Code, value: '8+', label: 'Technologies' },
   ];
 
@@ -31,6 +31,30 @@ const About: React.FC = () => {
     { name: 'Python', color: 'bg-green-600' },
   ];
 
+  const education = [
+    {
+      degree: 'B.E. Electronics and Communication Engineering',
+      year: '2026',
+      grade: 'CGPA 7.64',
+      institution: 'Rathinam Technical Campus, Anna University',
+      location: 'Echanari, Coimbatore'
+    },
+    {
+      degree: 'Higher Secondary Certificate',
+      year: '2022',
+      grade: '74.6%',
+      institution: 'Tagore Matric.Hr.Sec.School',
+      location: 'Deviyakurichi, Salem'
+    },
+    {
+      degree: 'Secondary School Leaving Certificate',
+      year: '2020',
+      grade: '92%',
+      institution: 'Tagore Matric.Hr.Sec.School',
+      location: 'Deviyakurichi, Salem'
+    }
+  ];
+
   return (
     <section id="about" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,27 +65,56 @@ const About: React.FC = () => {
               About Me
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Frontend Developer passionate about creating responsive and user-friendly web applications using modern technologies.
+              A motivated B.E. Electronics and Communication Engineer with strong technical skills and valuable knowledge gained through project experience.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Column - Content */}
             <div className="space-y-8">
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Transforming Ideas into Digital Solutions
+              {/* Personal Statement */}
+              <div className="bg-white rounded-xl p-6 shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  About Myself
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  I specialize in creating responsive and user-friendly web applications using modern technologies. 
-                  With a strong foundation in frontend development, I transform ideas into seamless digital solutions 
-                  that provide exceptional user experiences.
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  A motivated B.E. Electronics and Communication Engineer with strong technical skills and valuable 
+                  knowledge gained through project experience. Eager to contribute effectively to innovative projects 
+                  while continually enhancing my expertise and growing both professionally and personally in a 
+                  dynamic organization.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   My expertise spans across HTML5, CSS3, JavaScript, React.js, and backend technologies like Java and Python. 
                   I'm passionate about writing clean, maintainable code and staying up-to-date 
                   with the latest web development trends and best practices.
                 </p>
+              </div>
+
+              {/* Education Section */}
+              <div className="bg-white rounded-xl p-6 shadow-sm">
+                <h4 className="text-xl font-semibold text-gray-900 mb-6 flex items-center space-x-2">
+                  <GraduationCap className="w-6 h-6 text-blue-600" />
+                  <span>Education</span>
+                </h4>
+                <div className="space-y-6">
+                  {education.map((edu, index) => (
+                    <div key={index} className="relative pl-6 border-l-2 border-blue-200">
+                      <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
+                      <div className="space-y-1">
+                        <h5 className="font-semibold text-gray-900">{edu.degree}</h5>
+                        <div className="flex items-center space-x-4 text-sm">
+                          <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">{edu.year}</span>
+                          <span className="bg-green-100 text-green-800 px-2 py-1 rounded">{edu.grade}</span>
+                        </div>
+                        <p className="text-gray-700 font-medium">{edu.institution}</p>
+                        <p className="text-gray-500 text-sm flex items-center space-x-1">
+                          <MapPin className="w-3 h-3" />
+                          <span>{edu.location}</span>
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* Contact Info */}
@@ -122,6 +175,19 @@ const About: React.FC = () => {
 
             {/* Right Column - Skills & Stats */}
             <div className="space-y-8">
+              {/* Stats */}
+              <div className="grid grid-cols-2 gap-4">
+                {stats.map((stat, index) => (
+                  <div key={index} className="bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+                      <stat.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
+                    <div className="text-sm text-gray-600">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+
               {/* Skills */}
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h4 className="text-xl font-semibold text-gray-900 mb-6">Technical Skills</h4>
@@ -143,20 +209,7 @@ const About: React.FC = () => {
                 </div>
               </div>
 
-              {/* Stats */}
-              <div className="grid grid-cols-2 gap-4">
-                {stats.map((stat, index) => (
-                  <div key={index} className="bg-white p-6 rounded-xl shadow-sm text-center">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mx-auto mb-3">
-                      <stat.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-
-              {/* UI/UX Principles */}
+              {/* Development Principles */}
               <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-6 text-white">
                 <h4 className="text-xl font-semibold mb-4">Development Principles</h4>
                 <ul className="space-y-2 text-blue-100">
