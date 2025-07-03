@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Palette, Zap, Heart, Award, Calendar, MapPin, Mail, Phone, GraduationCap, BookOpen, Layers } from 'lucide-react';
+import { Code, Palette, Zap, Heart, Award, Calendar, MapPin, Mail, Phone, GraduationCap, BookOpen, Layers, Settings } from 'lucide-react';
 
 const About: React.FC = () => {
   const skills = [
@@ -15,7 +15,7 @@ const About: React.FC = () => {
 
   const stats = [
     { icon: Layers, value: '10', label: 'Mini Projects Completed' },
-    { icon: Heart, value: '2', label: 'Main Projects Undergoing' },
+    { icon: Settings, value: '2', label: 'Main Projects Undergoing' },
     { icon: GraduationCap, value: 'B.E.', label: 'College Studying Engineering' },
     { icon: Code, value: '8+', label: 'Technologies' },
   ];
