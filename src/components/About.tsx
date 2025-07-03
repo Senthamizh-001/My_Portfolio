@@ -3,19 +3,21 @@ import { Code, Palette, Zap, Heart, Award, Calendar, MapPin, Mail, Phone } from 
 
 const About: React.FC = () => {
   const skills = [
-    { name: 'HTML5 & CSS3', level: 95, color: 'from-orange-500 to-red-500' },
-    { name: 'JavaScript (ES6+)', level: 90, color: 'from-yellow-500 to-orange-500' },
-    { name: 'React.js', level: 88, color: 'from-blue-500 to-cyan-500' },
-    { name: 'Tailwind CSS', level: 92, color: 'from-cyan-500 to-blue-500' },
-    { name: 'Git & GitHub', level: 87, color: 'from-gray-600 to-gray-800' },
-    { name: 'Responsive Design', level: 93, color: 'from-pink-500 to-rose-500' },
+    { name: 'HTML5 & CSS3', level: 70, color: 'from-orange-500 to-red-500' },
+    { name: 'JavaScript (ES6+)', level: 70, color: 'from-yellow-500 to-orange-500' },
+    { name: 'React.js', level: 65, color: 'from-blue-500 to-cyan-500' },
+    { name: 'Tailwind CSS', level: 70, color: 'from-cyan-500 to-blue-500' },
+    { name: 'Git & GitHub', level: 75, color: 'from-gray-600 to-gray-800' },
+    { name: 'Responsive Design', level: 70, color: 'from-pink-500 to-rose-500' },
+    { name: 'Java', level: 75, color: 'from-red-600 to-orange-600' },
+    { name: 'Python', level: 60, color: 'from-green-500 to-blue-500' },
   ];
 
   const stats = [
     { icon: Award, value: '25+', label: 'Projects Completed' },
     { icon: Heart, value: '50+', label: 'Happy Clients' },
     { icon: Calendar, value: '3+', label: 'Years Experience' },
-    { icon: Code, value: '6+', label: 'Technologies' },
+    { icon: Code, value: '8+', label: 'Technologies' },
   ];
 
   const technologies = [
@@ -25,6 +27,8 @@ const About: React.FC = () => {
     { name: 'React.js', color: 'bg-cyan-500' },
     { name: 'Tailwind CSS', color: 'bg-teal-500' },
     { name: 'Git & GitHub', color: 'bg-gray-700' },
+    { name: 'Java', color: 'bg-red-600' },
+    { name: 'Python', color: 'bg-green-600' },
   ];
 
   return (
@@ -54,8 +58,8 @@ const About: React.FC = () => {
                   that provide exceptional user experiences.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  My expertise spans across HTML5, CSS3, JavaScript, and React.js, with a keen eye for 
-                  UI/UX principles. I'm passionate about writing clean, maintainable code and staying up-to-date 
+                  My expertise spans across HTML5, CSS3, JavaScript, React.js, and backend technologies like Java and Python. 
+                  I'm passionate about writing clean, maintainable code and staying up-to-date 
                   with the latest web development trends and best practices.
                 </p>
               </div>
@@ -154,13 +158,14 @@ const About: React.FC = () => {
 
               {/* UI/UX Principles */}
               <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-6 text-white">
-                <h4 className="text-xl font-semibold mb-4">UI/UX Principles</h4>
+                <h4 className="text-xl font-semibold mb-4">Development Principles</h4>
                 <ul className="space-y-2 text-blue-100">
                   <li>• User-centered design approach</li>
                   <li>• Accessibility and inclusive design</li>
                   <li>• Mobile-first responsive layouts</li>
                   <li>• Performance optimization</li>
                   <li>• Cross-browser compatibility</li>
+                  <li>• Clean, maintainable code</li>
                 </ul>
               </div>
             </div>
