@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Palette, Zap, Heart, Award, Calendar, MapPin, Mail, Phone, GraduationCap, BookOpen } from 'lucide-react';
+import { Code, Palette, Zap, Heart, Award, Calendar, MapPin, Mail, Phone, GraduationCap, BookOpen, Folder } from 'lucide-react';
 
 const About: React.FC = () => {
   const skills = [
@@ -14,7 +14,7 @@ const About: React.FC = () => {
   ];
 
   const stats = [
-    { icon: Award, value: '10', label: 'Mini Projects Completed' },
+    { icon: Folder, value: '10', label: 'Mini Projects Completed' },
     { icon: Heart, value: '2', label: 'Main Projects Undergoing' },
     { icon: GraduationCap, value: 'B.E.', label: 'College Studying Engineering' },
     { icon: Code, value: '8+', label: 'Technologies' },
@@ -77,16 +77,11 @@ const About: React.FC = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   About Myself
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-4">
+                <p className="text-gray-600 leading-relaxed">
                   A motivated B.E. Electronics and Communication Engineer with strong technical skills and valuable 
                   knowledge gained through project experience. Eager to contribute effectively to innovative projects 
                   while continually enhancing my expertise and growing both professionally and personally in a 
                   dynamic organization.
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  My expertise spans across HTML5, CSS3, JavaScript, React.js, and backend technologies like Java and Python. 
-                  I'm passionate about writing clean, maintainable code and staying up-to-date 
-                  with the latest web development trends and best practices.
                 </p>
               </div>
 
