@@ -32,10 +32,12 @@ const Hero: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto bg-gradient-to-br from-white/20 to-white/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">SS</span>
-              </div>
+            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-white/20 shadow-2xl backdrop-blur-sm">
+              <img 
+                src="/Senz_Ph.jpg" 
+                alt="Senthamizh S - Frontend Developer"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
