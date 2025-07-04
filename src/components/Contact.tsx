@@ -67,14 +67,14 @@ const Contact: React.FC = () => {
     {
       icon: Github,
       title: 'GitHub',
-      value: 'github.com/senthamizh',
-      link: 'https://github.com/senthamizh'
+      value: 'github.com/Senthamizh-001',
+      link: 'https://github.com/Senthamizh-001'
     },
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      value: 'linkedin.com/in/senthamizh',
-      link: 'https://linkedin.com/in/senthamizh'
+      value: 'linkedin.com/in/senthamizh-s-26b810284',
+      link: 'https://www.linkedin.com/in/senthamizh-s-26b810284'
     }
   ];
 

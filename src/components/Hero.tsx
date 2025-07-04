@@ -86,8 +86,8 @@ const Hero: React.FC = () => {
             {/* Social Links */}
             <div className="flex justify-center space-x-6 mt-8">
               {[
-                { icon: Github, href: 'https://github.com/senthamizh', label: 'GitHub' },
-                { icon: Linkedin, href: 'https://linkedin.com/in/senthamizh', label: 'LinkedIn' },
+                { icon: Github, href: 'https://github.com/Senthamizh-001', label: 'GitHub' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/senthamizh-s-26b810284', label: 'LinkedIn' },
                 { icon: Mail, href: 'mailto:senthamizh20780@gmail.com', label: 'Email' },
               ].map((social, index) => (
                 <a
