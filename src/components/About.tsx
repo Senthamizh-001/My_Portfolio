@@ -16,7 +16,7 @@ const About: React.FC = () => {
   const stats = [
     { icon: Layers, value: '10', label: 'Mini Projects Completed' },
     { icon: Settings, value: '2', label: 'Main Projects Undergoing' },
-    { icon: GraduationCap, value: 'B.E.', label: 'College Studying Engineering' },
+    { icon: GraduationCap, value: 'B.E.ECE', label: 'Engineering Student' },
     { icon: Code, value: '8+', label: 'Technologies' },
   ];
 
@@ -33,7 +33,7 @@ const About: React.FC = () => {
 
   const education = [
     {
-      degree: 'B.E. Electronics and Communication Engineering',
+      degree: 'B.E.ECE Electronics and Communication Engineering',
       year: '2026',
       grade: 'CGPA 7.64',
       institution: 'Rathinam Technical Campus, Anna University',
@@ -65,7 +65,7 @@ const About: React.FC = () => {
               About Me
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A motivated B.E. Electronics and Communication Engineer with strong technical skills and valuable knowledge gained through project experience.
+              A motivated B.E.ECE Electronics and Communication Engineer with strong technical skills and valuable knowledge gained through project experience.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ const About: React.FC = () => {
                   About Myself
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  A motivated B.E. Electronics and Communication Engineer with strong technical skills and valuable 
+                  A motivated B.E.ECE Electronics and Communication Engineer with strong technical skills and valuable 
                   knowledge gained through project experience. Eager to contribute effectively to innovative projects 
                   while continually enhancing my expertise and growing both professionally and personally in a 
                   dynamic organization.
