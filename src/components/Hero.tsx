@@ -10,13 +10,8 @@ const Hero: React.FC = () => {
   };
 
   const handleResumeDownload = () => {
-    // Create a temporary link to download resume
-    const link = document.createElement('a');
-    link.href = '/resume-senthamizh-s.pdf'; // You'll need to add your resume file to the public folder
-    link.download = 'Senthamizh_S_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Open Google Drive folder in new tab
+    window.open('https://drive.google.com/drive/folders/1BrS39Dru0uoErBkz8WDEIpkz0RkupIJm', '_blank');
   };
 
   return (

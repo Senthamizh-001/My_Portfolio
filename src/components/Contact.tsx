@@ -18,28 +18,8 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Create email content
-    const emailSubject = encodeURIComponent(`Portfolio Contact: ${formData.subject}`);
-    const emailBody = encodeURIComponent(
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Subject: ${formData.subject}\n\n` +
-      `Message:\n${formData.message}`
-    );
-    
-    // Open email client with pre-filled content
-    window.location.href = `mailto:senthamizh20780@gmail.com?subject=${emailSubject}&body=${emailBody}`;
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
+    // Direct email link
+    window.location.href = 'mailto:senthamizh20780@gmail.com';
   };
 
   const contactInfo = [
